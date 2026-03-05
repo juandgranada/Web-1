@@ -1,0 +1,162 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* VARIABLES DE COLOR */
+
+:root{
+    --bg-color:#0a0a0a;
+    --card-bg:#111;
+    --primary-green:#00ff88;
+    --secondary-green:#00cc66;
+    --text-color:#e5e5e5;
+}
+
+/* BODY */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height:1.6;
+}
+
+/* HEADER */
+
+.header{
+    background:black;
+    border-bottom:3px solid var(--primary-green);
+    padding:40px;
+    text-align:center;
+}
+
+.title{
+    font-size:2.5rem;
+    color:var(--primary-green);
+}
+
+.name{
+    font-size:1.6rem;
+    margin-top:10px;
+}
+
+.subtitle{
+    color:var(--secondary-green);
+    margin-top:5px;
+}
+
+/* CONTENEDOR */
+
+.main-container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* TARJETAS DE SECCION */
+
+.section-card{
+    background:var(--card-bg);
+    border-left:5px solid var(--primary-green);
+    padding:25px;
+    margin-bottom:30px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,255,136,0.2);
+
+    /* animación suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover{
+    transform: scale(1.05);
+    box-shadow:0 0 20px rgba(0,255,136,0.5);
+}
+
+/* TITULOS */
+
+.section-title{
+    color:var(--primary-green);
+    margin-bottom:15px;
+    font-size:1.6rem;
+}
+
+/* LISTAS */
+
+.list{
+    list-style:none;
+}
+
+.list li{
+    margin-bottom:10px;
+}
+
+/* NAV */
+
+.nav-menu{
+    background:#050505;
+    padding:20px;
+    border:1px solid var(--primary-green);
+    margin-bottom:30px;
+    border-radius:8px;
+}
+
+.nav-menu ul{
+    list-style:none;
+}
+
+.nav-menu li{
+    margin:10px 0;
+}
+
+.nav-menu a{
+    text-decoration:none;
+    color:var(--primary-green);
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.nav-menu a:hover{
+    color:white;
+}
+
+/* CONTACTO */
+
+.contact-list{
+    list-style:none;
+    margin-top:10px;
+}
+
+.contact-list li{
+    margin:10px 0;
+}
+
+.contact-list a{
+    text-decoration:none;
+    color:var(--primary-green);
+    font-weight:bold;
+}
+
+.contact-list a:hover{
+    color:white;
+}
+
+.contact-note{
+    margin-top:15px;
+    font-size:0.9rem;
+    color:#aaa;
+}
+
+/* FOOTER */
+
+.footer{
+    text-align:center;
+    padding:25px;
+    background:black;
+    border-top:3px solid var(--primary-green);
+    margin-top:40px;
+}
